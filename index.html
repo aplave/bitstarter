@@ -28,6 +28,7 @@ rel="stylesheet" type="text/css">
       }
     }
 
+      html
     /* Landscape phones and down */
     @media (max-width: 480px) {
       .copy {
@@ -46,6 +47,8 @@ rel="stylesheet" type="text/css">
     /* Main body and headings */
       body {
         font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+        background-image: url(http://farm4.staticflickr.com/3729/9310794027_95a7c53bf7_k.jpg);
+        background-size: 100% auto;
       }
       .heading, .subheading {
         font-family: 'Ubuntu',Helvetica,Arial,sans-serif;
@@ -62,6 +65,10 @@ rel="stylesheet" type="text/css">
       }
       
       /* Video pitch and Action */
+      .search {
+        padding: 2.5% 0%;
+        text-align: center;
+      }
       .pitch {
         padding: 2.5% 0%;
       }
@@ -97,6 +104,10 @@ rel="stylesheet" type="text/css">
       .footer a {
         color: #ccccff;
       }
+      .input-mysize { 
+        width: 70%;
+      }
+
     </style>
   </head>
   
@@ -119,6 +130,7 @@ rel="stylesheet" type="text/css">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="#sign_up">Sign up,maybe do this as a popup?</a><li> 
             </ul>
           </div> <!--/.nav-collapse-->
         </div>
@@ -144,11 +156,13 @@ rel="stylesheet" type="text/css">
           <p class="lead">~Have your jam and play it too~</p>
         </div>
       </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-
+      <div class="row-fluid search">
+        <form class="form-search">
+          <input type="text" class="input-mysize search-query">
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+    <div class="row-fluid pitch">
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
         <div class="span5 actions">
           <div class="span8 offset2">
